@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>惠州学院 - 移动互联网虚拟仿真实验教学中心</title>
+
+  <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  
+  
+  <style>
+    .banner, .footer {
+      background-color: darkred;
+      color: white;
+    }
+
+    .banner, .footer, .container-fluid {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+
+    .banner-title {
+      margin-left: 90px;
+      font-size: 30px;
+      padding-bottom: 15px;
+    }
+
+    .logo {
+      padding-top: 2%;
+    }
+
+    /*顶部导航栏*/
+    .nav-head {
+      background-color: white;
+    }
+
+    .nav-head > li {
+      display: inline-block;
+    }
+
+    .nav-head > li > a {
+      color: black;
+      font-size: 14px;     
+    } 
+
+    .nav-head > li.active,
+    .nav-head > li > a:hover  {
+      background-color: #b3080a; 
+      opacity: 0.8;
+      color: white;
+    }
+
+    .nav-head > li.active > a {
+      background-color: #b3080a; 
+      color: white;
+    }
+
+    .tab-content {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    /*主题内容*/
+    .container-fluid {
+      margin-bottom: 40px;
+    }
+
+    /*侧边栏样式*/
+    .sidebar-banner {
+      background-color: #b3080a; 
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+      color: white;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      border-radius: 6px;
+      box-shadow: 2px 2px 5px #999;
+    }
+
+    .nav-sidebar {
+      margin-top: 15px;
+    }
+
+    .nav-sidebar > li {
+      margin-bottom: 5px;
+      border-radius: 6px;
+      font-size: 16px;
+      text-align: center;
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .nav-sidebar > li > a {
+      color: black;
+    }
+
+    .nav-sidebar > li.active,
+    .nav-sidebar > li > a:hover,
+    .nav-sidebar > li > a:focus,
+    .nav-sidebar > li > a:active {     
+      background-color: #eee;
+      border-radius: 6px;
+    }
+
+    /*文章正文*/
+    .note {
+      border: 1px solid #c9c9c9;
+      border-radius: 10px;
+      padding: 20px 15px 20px 15px;
+      min-height: 300px;
+    }
+
+    /*页脚*/
+    .footer {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      width: 100%;
+    }
+
+    .footer .address {
+      padding-left: 40px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <img class="logo" src="http://www.hzu.edu.cn/_upload/site/00/03/3/logo.png" alt="logo">
+    <div class="banner-title">移动互联网虚拟仿真实验教学中心</div> 
+  </div>
+
+  <div class="container-fluid">
+    <!-- 顶部导航栏 -->
+    <ul class="nav nav-head" role="tablist">
+      <li role="presentation"><a href="#home">首页</a></li>
+      <li role="presentation" class="active"><a href="#zxgk" aria-controls="zxgk" role="tab" data-toggle="tab">中心概况</a></li>
+      <li role="presentation"><a href="#jxzy" aria-controls="jxzy" role="tab" data-toggle="tab">教学资源</a></li>
+      <li role="presentation"><a href="#cgzh" aria-controls="cgzh" role="tab" data-toggle="tab">成果转化</a></li>
+      <li role="presentation"><a href="#xqhz" aria-controls="xqhz" role="tab" data-toggle="tab">校企合作</a></li>
+      <li role="presentation"><a href="#szdw" aria-controls="szdw" role="tab" data-toggle="tab">师资队伍</a></li>
+      <li role="presentation"><a href="#gltx" aria-controls="gltx" role="tab" data-toggle="tab">管理体系</a></li>
+      <li role="presentation"><a href="#zygx" aria-controls="zygx" role="tab" data-toggle="tab">资源共享</a></li>
+      <li role="presentation"><a href="#hjsb" aria-controls="hjsb" role="tab" data-toggle="tab">环境设备</a></li>
+      <li role="presentation"><a href="#sbcl" aria-controls="sbcl" role="tab" data-toggle="tab">申报材料</a></li>
+      <li role="presentation"><a href="#ptrk">平台入口</a></li>    
+    </ul>    
+    <!-- 顶部导航内容 -->
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="zxgk">
+        <div class="row"> 
+          <div class="col-xs-6 col-md-4">
+            <div class="sidebar-banner">中心概况</div>
+            <div>
+              <!-- 侧边导航栏 -->
+              <ul class="nav nav-sidebar" role="tablist">
+                <li role="presentation" class="active"><a href="#note1" aria-controls="note1" role="tab" data-toggle="tab">中心概况</a></li>
+                <li role="presentation"><a href="#note2" aria-controls="note2" role="tab" data-toggle="tab">发展历程</a></li>
+                <li role="presentation"><a href="#note3" aria-controls="note3" role="tab" data-toggle="tab">队伍建设</a></li>
+                <li role="presentation"><a href="#note4" aria-controls="note4" role="tab" data-toggle="tab">虚拟仿真实验教学优势</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-8">
+            <!-- 侧边导航内容 -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="note1">
+                <div class="note">建设中...</div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="note2">
+                <div class="note">建设中...</div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="note3">
+                <div class="note">建设中...</div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="note4">
+                <div class="note">建设中...</div>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="jxzy">
+        <div class="row"> 
+          <div class="col-xs-6 col-md-4">
+            <div class="sidebar-banner">教学资源</div>
+            <!-- 侧边导航栏 -->
+            <ul class="nav nav-sidebar" role="tablist">
+              <li role="presentation" class="active"><a href="#note5" aria-controls="note5" role="tab" data-toggle="tab">开放式网络工程虚拟仿真实验教学管理与共享平台</a></li>
+              <li role="presentation"><a href="#note6" aria-controls="note6" role="tab" data-toggle="tab">网络工程专用集成电路（ASIC）芯片设计与物联网设备设计虚拟仿真实验教学系统</a></li>
+              <li role="presentation"><a href="#note7" aria-controls="note7" role="tab" data-toggle="tab">软件定义网络（SDN）虚拟仿真实验教学系统</a></li>
+              <li role="presentation"><a href="#note8" aria-controls="note8" role="tab" data-toggle="tab">网络信息安全虚拟仿真实验室及教学系统</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-md-8">
+            <!-- 侧边导航内容 -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="note5">
+                <div class="note">建设中...</div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="note6">
+                <div class="note">建设中...</div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="note7">
+                <div class="note">建设中...</div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="note8">
+                <div class="note">建设中...</div>
+              </div>
+            </div>             
+          </div>
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="cgzh">
+        <div class="row"> 
+          <div class="col-xs-6 col-md-4">
+            <div class="sidebar-banner">成果转化</div>
+            <!-- 侧边导航栏 -->
+            <ul class="nav nav-sidebar" role="tablist">
+              <li role="presentation" class="active"><a href="#note9" aria-controls="note9" role="tab" data-toggle="tab">科研成果(近五年)转化而来的虚拟仿真实验教学内容</a></li>
+              <li role="presentation"><a href="#note10" aria-controls="note10" role="tab" data-toggle="tab"> 深圳市物联网专用集成电路设计工程重点虚拟仿真实验室科研成果转化为实验项目情况</a></li>
+              <li role="presentation"><a href="#note11" aria-controls="note11" role="tab" data-toggle="tab">深圳市移动互联网应用中间件技术工程重点虚拟仿真实验室科研成果转化为实验项目情况</a></li>
+              <li role="presentation"><a href="#note12" aria-controls="note12" role="tab" data-toggle="tab"> 深圳市嵌入式系统设计重点虚拟仿真实验室科研成果转化为实验项目情况</a></li>
+            </ul>            
+          </div>
+          <div class="col-xs-12 col-md-8">
+            <!-- 侧边导航内容 -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="note9">
+                <div class="note">建设中...</div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="note10">
+                <div class="note">建设中...</div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="note11">
+                <div class="note">建设中...</div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="note12">
+                <div class="note">建设中...</div>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="xqhz">
+        <div class="row"> 
+          <div class="col-xs-6 col-md-4">
+            <div class="sidebar-banner">校企合作</div>
+            <!-- 侧边导航栏 -->
+            <ul class="nav nav-sidebar" role="tablist">
+              <li role="presentation" class="active"><a href="#note13" aria-controls="note13" role="tab" data-toggle="tab">校企合作</a></li>
+              <li role="presentation"><a href="#note14" aria-controls="note14" role="tab" data-toggle="tab"> 北京润尼尔网络科技有限公司</a></li>
+              <li role="presentation"><a href="#note15" aria-controls="note15" role="tab" data-toggle="tab">西普科技有限公司</a></li>
+              <li role="presentation"><a href="#note16" aria-controls="note16" role="tab" data-toggle="tab"> 华为技术有限公司</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-md-8">
+            <!-- 侧边导航内容 -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="note13">
+                <div class="note">建设中...</div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="note14">
+                <div class="note">建设中...</div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="note15">
+                <div class="note">建设中...</div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="note16">
+                <div class="note">建设中...</div>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="szdw">
+        <div class="row"> 
+          <div class="col-xs-6 col-md-4">
+            <div class="sidebar-banner">师资队伍</div>
+            <!-- 侧边导航栏 -->
+            <ul class="nav nav-sidebar" role="tablist">
+              <li role="presentation" class="active"><a href="#note17" aria-controls="note17" role="tab" data-toggle="tab">中心主任</a></li>
+              <li role="presentation"><a href="#note18" aria-controls="note18" role="tab" data-toggle="tab">中心人员</a></li>
+              <li role="presentation"><a href="#note19" aria-controls="note19" role="tab" data-toggle="tab">队伍结构</a></li>
+              <li role="presentation"><a href="#note20" aria-controls="note20" role="tab" data-toggle="tab"> 教学水平</a></li>
+            </ul>            
+          </div>
+          <div class="col-xs-12 col-md-8">
+            <!-- 侧边导航内容 -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="note17">
+                <div class="note">建设中...</div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="note18">
+                <div class="note">建设中...</div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="note19">
+                <div class="note">建设中...</div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="note20">
+                <div class="note">建设中...</div>
+              </div>
+            </div>             
+          </div>
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="gltx">
+        <div class="row"> 
+          <div class="col-xs-6 col-md-4">
+            <div class="sidebar-banner">管理体系</div>
+            <!-- 侧边导航栏 -->
+            <ul class="nav nav-sidebar" role="tablist">
+              <li role="presentation" class="active"><a href="#note21" aria-controls="note21" role="tab" data-toggle="tab">组织保障</a></li>
+              <li role="presentation"><a href="#note21" aria-controls="note21" role="tab" data-toggle="tab">制度保障</a></li>
+              <li role="presentation"><a href="#note23" aria-controls="note23" role="tab" data-toggle="tab">管理规范</a></li>
+            </ul>            
+          </div>
+          <div class="col-xs-12 col-md-8">
+            <!-- 侧边导航内容 -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="note21">
+                <div class="note">建设中...</div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="note21">
+                <div class="note">建设中...</div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="note23">
+                <div class="note">建设中...</div>
+              </div>
+            </div>              
+          </div>
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="zygx">
+        <div class="row"> 
+          <div class="col-xs-6 col-md-4">
+            <div class="sidebar-banner">资源共享</div>
+            <!-- 侧边导航栏 -->
+            <ul class="nav nav-sidebar" role="tablist">
+              <li role="presentation" class="active"><a href="#note24" aria-controls="note24" role="tab" data-toggle="tab">校内共享</a></li>
+              <li role="presentation"><a href="#note25" aria-controls="note25" role="tab" data-toggle="tab">校外共享</a></li>
+              <li role="presentation"><a href="#note26" aria-controls="note26" role="tab" data-toggle="tab">进一步拓宽资源共享的渠道</a></li>
+              <li role="presentation"><a href="#note27" aria-controls="note27" role="tab" data-toggle="tab">进一步优化和丰富共享资源</a></li>
+            </ul>              
+          </div>
+          <div class="col-xs-12 col-md-8">
+            <!-- 侧边导航内容 -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="note24">
+                <div class="note">建设中...</div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="note25">
+                <div class="note">建设中...</div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="note26">
+                <div class="note">建设中...</div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="note27">
+                <div class="note">建设中...</div>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="hjsb">
+        <div class="row"> 
+          <div class="col-xs-6 col-md-4">
+            <div class="sidebar-banner">环境设备</div>
+            <!-- 侧边导航栏 -->
+            <ul class="nav nav-sidebar" role="tablist">
+              <li role="presentation" class="active"><a href="#note28" aria-controls="note28" role="tab" data-toggle="tab">仪器设备配置情况</a></li>
+              <li role="presentation"><a href="#note29" aria-controls="note29" role="tab" data-toggle="tab">环境与安全</a></li>
+              <li role="presentation"><a href="#note30" aria-controls="note30" role="tab" data-toggle="tab">运行与维护</a></li>
+              <li role="presentation"><a href="#note31" aria-controls="note31" role="tab" data-toggle="tab">网络管理与安全</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-md-8">
+            <!-- 侧边导航内容 -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="note28">
+                <div class="note">建设中...</div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="note29">
+                <div class="note">建设中...</div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="note30">
+                <div class="note">建设中...</div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="note31">
+                <div class="note">建设中...</div>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="sbcl">
+        <div class="row"> 
+          <div class="col-xs-6 col-md-4">
+            <div class="sidebar-banner">申报材料</div>
+            <!-- 侧边导航栏 -->
+            <ul class="nav nav-sidebar" role="tablist">
+              <li role="presentation" class="active"><a href="#note32" aria-controls="note32" role="tab" data-toggle="tab">申报书</a></li>
+              <li role="presentation"><a href="#note33" aria-controls="note33" role="tab" data-toggle="tab">支撑材料</a></li>
+              <li role="presentation"><a href="#note34" aria-controls="note34" role="tab" data-toggle="tab">政策措施和规章制度</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-md-8">
+            <!-- 侧边导航内容 -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="note32">
+                <div class="note">建设中...</div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="note33">
+                <div class="note">建设中...</div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="note34">
+                <div class="note">建设中...</div>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>     
+  </div>
+
+  <div class="footer">
+    <span class="school">建设单位：惠州学院</span>
+    <span class="address">惠州市惠城区演达大道46号</span>
+  </div>
+
+  <!-- jquery -->
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+</body>
+</html>
